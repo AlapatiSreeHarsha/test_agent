@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 > Sign in form</h1>
+   
+    <form  id="form">
+  <table>
+    <tr>
+        <td><label  for="user">Username:</label></td>
+           <td> <input type="text" name="username" id="user"></td>
+           
+    </tr>
+    <tr>
+        <td><label for="email">E-mail:</label></td>
+           <td> <input type="email" placeholder="example@gmail.com" pattern="[a-zA-z0-9]+@gmail.com" id="email"></td>
+
+    </tr>
+    <tr>
+        <td>
+        <label for="password"> Set Password:</label></td>
+        <td><input type="password" minlength="4" pattern="\d+" id="password">
+    </td>
+    </tr>
+    <tr>
+        <td>
+        <label for="confirm">Confirm Password:</label></td>
+        <td><input type="password" minlength="4" id="confirm">
+    </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <button class="button" value="submit" id="submit">
+                Submit
+            </button>
+        </td>
+    </tr>
+  </table>
+    <h2 id="si"></h2>
+    <p id="error"></p>
+    </form>
+    <script>
+        document.getElementById("form").addEventListener('submit',function(event){
+            event.preventDefault();
+            var name=document.getElementById("user").value;
+            var set = document.getElementById("password").value;
+            var confirm=document.getElementById("confirm").value;
+            if(set==confirm){
+            document.getElementById("si").innerText="Hi "+name+"You signed in successfully";
+            console.log(name);
+        localStorage.setItem(name ,set)}
+            else{
+                document.getElementById("error"). innerText="Password doesn't match please chack again";
+            }
+
+           
+        })
+    </script>
+</body>
+</html>

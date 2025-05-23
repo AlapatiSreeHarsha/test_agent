@@ -1,0 +1,27 @@
+
+body{
+    background-color:rgba(111, 46, 231, 0.397);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    margin:30vh 30vw 30vh 30vw;
+}
+#error{
+    color: red;
+    font-size:10px;
+}
+table{
+    background-color: #f7fffc;
+    
+}
+td{
+    width: 200px;
+}
+button{
+    align-self:center;
+    width:70%;
+    background-color: dodgerblue;
+    color: white;
+    border:0px;
+    padding:7px;
+
+}
