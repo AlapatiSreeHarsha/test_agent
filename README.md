@@ -9,7 +9,7 @@ This project is a HTML/CSS application that provides [brief description of what 
 ## Installation Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/santhoshkumaritla/testing-github.git
+   git clone https://github.com/AlapatiSreeHarsha/test_agent.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -52,4 +52,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [List any acknowledgements here]
 
 ---
-*Last Updated: 2025-05-23 09:37:15*
+*Last Updated: 2025-05-23 09:46:48*
